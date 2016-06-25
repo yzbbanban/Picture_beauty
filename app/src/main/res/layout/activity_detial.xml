@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_background"
+    tools:context=".activity.DetialActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_black"
+        >
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_beauty_pic_name"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text=" "
+            android:textColor="@color/light_red" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <GridView
+            android:id="@+id/gv_detial"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:verticalSpacing="5dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
