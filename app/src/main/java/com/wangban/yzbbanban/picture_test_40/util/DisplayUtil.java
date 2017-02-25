@@ -147,7 +147,7 @@ public class DisplayUtil implements Contast {
     public Bitmap loadBitmap(String path) {
         try {
             InputStream is = HttpUtil.get(path);
-            Bitmap bitmap = BitmapUtil.loadBitmap(is, type, 320, 250);
+            Bitmap bitmap = BitmapUtil.loadBitmap(is, type, 200, 300);
             cache.put(path, new SoftReference<Bitmap>(bitmap));
             // Log.e(TAG, "loadBitmap: 天呢！！！！！");
             String fileName = path;
