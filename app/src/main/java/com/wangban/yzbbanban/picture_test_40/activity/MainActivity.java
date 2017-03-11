@@ -20,6 +20,9 @@ import android.widget.Toast;
 
 import com.wangban.yzbbanban.picture_test_40.R;
 import com.wangban.yzbbanban.picture_test_40.contast.Contast;
+import com.wangban.yzbbanban.picture_test_40.fragment.FragmentCollect;
+import com.wangban.yzbbanban.picture_test_40.fragment.FragmentForeign;
+import com.wangban.yzbbanban.picture_test_40.fragment.FragmentJapan;
 import com.wangban.yzbbanban.picture_test_40.fragment.FragmentPortrait;
 import com.wangban.yzbbanban.picture_test_40.fragment.FragmentPu;
 import com.wangban.yzbbanban.picture_test_40.fragment.FragmentLeg;
@@ -79,7 +82,9 @@ public class MainActivity extends AppCompatActivity
         fragments.add(new FragmentPu());
         fragments.add(new FragmentLeg());
         fragments.add(new FragmentPortrait());
-        fragments.add(new FragmentPaper());
+        fragments.add(new FragmentJapan());
+        fragments.add(new FragmentCollect());
+        fragments.add(new FragmentForeign());
         adapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
@@ -143,13 +148,31 @@ public class MainActivity extends AppCompatActivity
 
           //  Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();
             position = 5;
-            tvTitle.setText("唯美写真");
+            tvTitle.setText("性感特写");
         } else if (id == R.id.nav_beauty_paper) {
 
          //   Toast.makeText(this, "paper", Toast.LENGTH_SHORT).show();
             position = 6;
 
             tvTitle.setText("美女壁纸");
+        } else if (id == R.id.nav_beauty_japan) {
+
+            //   Toast.makeText(this, "paper", Toast.LENGTH_SHORT).show();
+            position = 7;
+
+            tvTitle.setText("日本美女");
+        }else if (id == R.id.nav_beauty_collect) {
+
+            //   Toast.makeText(this, "paper", Toast.LENGTH_SHORT).show();
+            position = 8;
+
+            tvTitle.setText("美女合集");
+        }else if (id == R.id.nav_beauty_foreign) {
+
+            //   Toast.makeText(this, "paper", Toast.LENGTH_SHORT).show();
+            position = 9;
+
+            tvTitle.setText("欧美美女");
         }
         selectFragment(position);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

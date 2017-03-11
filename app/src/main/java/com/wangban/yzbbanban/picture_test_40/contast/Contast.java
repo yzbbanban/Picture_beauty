@@ -13,7 +13,10 @@ public interface Contast {
     String YOUNG = "http://m.xxxiao.com/cat/shaonv";
     String PU = "http://m.xxxiao.com/cat/mrxt";
     String LEG = "http://m.xxxiao.com/cat/swmt";
-    String PORTRAIT = "http://m.xxxiao.com/cat/wmxz";
+    String PORTRAIT = "http://m.xxxiao.com/cat/xgtx";
+    String JAPAN = "http://m.xxxiao.com/cat/rihandongya";
+    String COLLECTION = "http://m.xxxiao.com/cat/collection";
+    String FOREIGN = "http://m.xxxiao.com/cat/oumei";
     String PAPER = "http://m.xxxiao.com/cat/wallpaper";
 
     String BEAUTY_PATH = Environment.getExternalStorageDirectory() + "/DCIM/";

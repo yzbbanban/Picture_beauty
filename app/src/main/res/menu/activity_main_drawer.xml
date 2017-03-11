@@ -19,10 +19,19 @@
             android:title="丝袜美腿" />
         <item
             android:id="@+id/nav_beauty_portrait"
-            android:title="唯美写真" />
+            android:title="性感特写" />
         <item
             android:id="@+id/nav_beauty_paper"
             android:title="美女壁纸" />
+        <item
+            android:id="@+id/nav_beauty_japan"
+            android:title="日本美女" />
+        <item
+            android:id="@+id/nav_beauty_collect"
+            android:title="美女合集" />
+        <item
+            android:id="@+id/nav_beauty_foreign"
+            android:title="欧美美女" />
     </group>
 
     <!--<item android:title="Communicate">-->
