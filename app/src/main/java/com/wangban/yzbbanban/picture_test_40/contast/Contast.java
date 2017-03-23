@@ -8,7 +8,7 @@ import android.os.Environment;
 public interface Contast {
     int HANDLER_PICDAL_SUCCESS = 1;
 
-    String NEW = "http://m.xxxiao.com";
+    String NEW = "http://m.xxxiao.com/new";
     String SEXY = "http://m.xxxiao.com/cat/xinggan";
     String YOUNG = "http://m.xxxiao.com/cat/shaonv";
     String PU = "http://m.xxxiao.com/cat/mrxt";

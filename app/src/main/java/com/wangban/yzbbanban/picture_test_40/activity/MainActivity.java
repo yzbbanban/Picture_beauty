@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity
         fragments.add(new FragmentPu());
         fragments.add(new FragmentLeg());
         fragments.add(new FragmentPortrait());
+        fragments.add(new FragmentPaper());
         fragments.add(new FragmentJapan());
         fragments.add(new FragmentCollect());
         fragments.add(new FragmentForeign());
